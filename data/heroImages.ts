@@ -1,8 +1,8 @@
 export const data = [
   {
     id: 1,
-    src: "https://images.pexels.com/photos/918595/pexels-photo-918595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "An adult fox",
+    src: "https://images.pexels.com/photos/57481/fox-red-fox-red-licking-57481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "A fox lying",
     heading: "Support Animal Welfare",
     paragraph:
       "Make a difference in the lives of animals by supporting our animal welfare initiatives. Your donations help us provide food, shelter, medical care, and love to abandoned and neglected animals. Join us in creating a better world for our furry friends.",
