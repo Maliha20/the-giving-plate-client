@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ee87fb;
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar-track {
@@ -23,7 +23,7 @@
 
 ::selection {
   color: #1d232a;
-  background-color: #ee87fb;
+  background-color: #ffffff;
 }
 
 html {
