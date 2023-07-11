@@ -1,7 +1,7 @@
 export const data = [
   {
     id: 1,
-    src: "https://www.pexels.com/photo/adult-fox-on-grass-2786709/",
+    src: "https://images.pexels.com/photos/918595/pexels-photo-918595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     alt: "An adult fox",
     heading: "Support Animal Welfare",
     paragraph:
