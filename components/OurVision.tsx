@@ -30,7 +30,7 @@ const OurVision = () => {
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
                 className="text-3xl md:text-5xl font-semibold uppercase"
               >
-                Harmony for Hounds and Felines
+                Paws in Harmony
               </motion.h3>
             </div>
             <div className="overflow-hidden">
@@ -39,10 +39,7 @@ const OurVision = () => {
                 whileInView={{ y: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.4 }}
               >
-                With 80 rescue volunteers, 2 shelter homes capable of housing
-                600 homeless animals, and 3 medical service centers staffed by 8
-                dedicated veterinary doctors, we ensure the health and
-                well-being of over 450 needy animals.
+                Within its welcoming gates, furry friends of all shapes and sizes find solace, healing, and a renewed sense of joy. The air is filled with the symphony of contented purrs, playful barks, and the occasional chirp of a curious bird. Each step within the sanctuary resonates with a profound love for all creatures, big and small.
               </motion.p>
             </div>
             <div className="overflow-hidden">
@@ -51,16 +48,7 @@ const OurVision = () => {
                 whileInView={{ y: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.6 }}
               >
-                Alongside our commitment to humans, our organization is also
-                dedicated to animal welfare. Our vision encompasses a world
-                where compassion knows no species boundaries, eradicating hunger
-                and suffering for all. Through our dedicated efforts, including
-                feeding of needy animals with nutritious animal-friendly foods,
-                we alleviate the plight of needy animals, providing not only
-                sustenance but also essential medical care and shelter. Our
-                holistic approach aims to cultivate empathy and foster a society
-                where the well-being of every living being is cherished and
-                protected.
+              Dedicated volunteers with hearts as warm as the summer sun ensure that the needs of every resident are met. They tirelessly provide nourishment, shelter, and medical care, all with unwavering compassion. The dogs wag their tails in gratitude, while the cats purr their appreciation, knowing they are safe and loved.
               </motion.p>
             </div>
           </div>
@@ -119,7 +107,7 @@ const OurVision = () => {
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
                 className="text-3xl md:text-5xl font-semibold uppercase xl:text-right"
               >
-                A True Friend in Need
+                A Bond Unbroken
               </motion.h3>
             </div>
             <div className="overflow-hidden">
@@ -129,11 +117,7 @@ const OurVision = () => {
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.4 }}
                 className="xl:text-right"
               >
-                Having more than 200 food suppliers and 60 volunteers, we serve
-                nutritious and balanced diets to 4 assisted living facilities
-                with over 400 elderly individuals, 6 orphanages with more than
-                600 children, and an average of 200 homeless people on a regular
-                basis.
+               Dedicated staff and volunteers, fueled by an unwavering love for animals, devote themselves to the well-being of these cherished residents. They provide a warm bed, nutritious meals, and the tender touch that mends both physical and emotional scars. Each interaction is infused with kindness, nurturing the bond between humans and their furry companions.
               </motion.p>
             </div>
             <div className="overflow-hidden">
@@ -143,15 +127,7 @@ const OurVision = () => {
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.6 }}
                 className="xl:text-right"
               >
-                Our organization is dedicated to human welfare and envisions a
-                future where no individual experiences hunger. Through tireless
-                efforts, we collect surplus food from restaurants and events,
-                transforming it into nourishing meals for the less fortunate. We
-                strive to eliminate hunger by bridging the gap between food
-                waste and the needs of underprivileged individuals. With
-                compassion and determination, we envision a society where every
-                person has access to an ample supply of nutritious food,
-                ensuring their well-being and preserving their dignity.
+                Visitors to the shelter bear witness to the magic of these connections. Children eagerly engage in playful romps with newfound canine friends, their laughter intertwining with the joyous barks that fill the air. Meanwhile, adults find solace in the calming presence of gentle felines, whose purrs provide comfort and companionship.
               </motion.p>
             </div>
           </div>

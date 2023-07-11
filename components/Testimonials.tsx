@@ -25,7 +25,7 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="wrapper section-padding">
-      <SectionTitle title="Voices of Satisfaction" />
+      <SectionTitle title="Words of Appreciation" />
 
       {isLoading && <Loading isLoading={isLoading} />}
 
