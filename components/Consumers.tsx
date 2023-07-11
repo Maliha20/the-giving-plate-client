@@ -11,7 +11,7 @@ const Consumers = () => {
 
   return (
     <section id="top-consumers" className="wrapper section-padding">
-      <SectionTitle title="Top Consumers" />
+      <SectionTitle title="Top Guests" />
 
       {isLoading && <Loading isLoading={isLoading} />}
 
