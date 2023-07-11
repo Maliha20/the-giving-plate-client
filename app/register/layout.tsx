@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Elysian Feeds | Register",
+  title: "Serving Smiles | Register",
 };
 
 export default function RegisterLayout({
