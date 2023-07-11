@@ -8,22 +8,22 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(234, 136, 245, 0.5);
+  background-color: rgba(31, 144, 178, 0.5);
   height: 10%;
   border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ffffff;
+  background-color: #1f75b2;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ffffff;
+  background-color: #3f464e;
 }
 
 ::selection {
   color: #1d232a;
-  background-color: #ffffff;
+  background-color: #1f75b2;
 }
 
 html {
@@ -43,15 +43,15 @@ html {
 /* SWIPER STYLES */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ee87fb !important;
-  fill: #ee87fb !important;
-  stroke: #ee87fb !important;
+  color: #1f75b2 !important;
+  fill: #1f75b2!important;
+  stroke: #1f75b2 !important;
 }
 
 .swiper-pagination-bullet {
-  background-color: #ee87fb !important;
+  background-color: #1f75b2 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #ee87fb !important;
+  background-color: #1f75b2 !important;
 }
