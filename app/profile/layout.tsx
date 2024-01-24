@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | Profile",
+  title: "Elysian Feeds | Profile",
 };
 
 export default function ProfileLayout({
