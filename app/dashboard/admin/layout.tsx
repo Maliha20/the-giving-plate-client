@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | Admin Dashboard",
+  title: "The Giving Plate | Admin Dashboard",
 };
 
 export default function AdminDashboardLayout({

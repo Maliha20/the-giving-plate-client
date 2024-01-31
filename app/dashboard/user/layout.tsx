@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | User Dashboard",
+  title: "The Giving Plate | User Dashboard",
 };
 
 export default function UserLayout({

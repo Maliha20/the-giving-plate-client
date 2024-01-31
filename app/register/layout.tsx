@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | Register",
+  title: "The Giving Plate | Register",
 };
 
 export default function RegisterLayout({

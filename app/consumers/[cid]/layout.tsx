@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | Consumer Details",
+  title: "The Giving Plate | Consumer Details",
 };
 
 export default function ConsumerLayout({

@@ -11,7 +11,7 @@ const baiJamjuree = Bai_Jamjuree({
 });
 
 export const metadata = {
-  title: "Serving Smiles | Home",
+  title: "The Giving Plate | Home",
 };
 
 export default function RootLayout({

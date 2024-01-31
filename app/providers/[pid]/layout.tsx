@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | Provider Details",
+  title: "The Giving Plate | Provider Details",
 };
 
 export default function ProviderLayout({

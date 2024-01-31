@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Serving Smiles | Provider Connector Dashboard",
+  title: "The Giving Plate | Provider Connector Dashboard",
 };
 
 export default function ProviderConnectorLayout({
