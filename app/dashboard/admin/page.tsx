@@ -246,37 +246,54 @@ const AdminDashboard = () => {
                 </h2>
                 {/* GRAPH */}
                 {monthlyData?.length > 0 && (
-                  <div className="mt-10 h-[50rem] bg-black p-10 w-full rounded-xl shadow-2xl">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <LineChart
-                        width={500}
-                        height={300}
-                        data={monthlyData}
-                        margin={{
-                          top: 5,
-                          right: 30,
-                          left: 20,
-                          bottom: 5,
-                        }}
-                      >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="month" />
-                        <YAxis />
-                        <Tooltip />
-                        <Legend />
-                        <Line
-                          type="monotone"
-                          dataKey="contributions"
-                          stroke="#3AA6B9"
-                          activeDot={{ r: 8 }}
-                        />
-                        <Line
-                          type="monotone"
-                          dataKey="consumptions"
-                          stroke="#FF9EAA"
-                        />
-                      </LineChart>
-                    </ResponsiveContainer>
+                  <div>
+                    <div className="mt-10 h-[50rem] bg-black p-10 w-full rounded-xl shadow-2xl">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <LineChart
+                          width={500}
+                          height={150}
+                          data={monthlyData}
+                          margin={{
+                            top: 5,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                          }}
+                        >
+                          <CartesianGrid strokeDasharray="3 3" />
+                          <XAxis dataKey="month" />
+                          <YAxis />
+                          <Tooltip />
+                          <Legend />
+                          <Line
+                            type="monotone"
+                            dataKey="contributions"
+                            stroke="#3AA6B9"
+                            activeDot={{ r: 8 }}
+                          />
+                          <Line
+                            type="monotone"
+                            dataKey="consumptions"
+                            stroke="#FF9EAA"
+                          />
+                        </LineChart>
+                      </ResponsiveContainer>
+                    </div>
+
+                    <div className="mt-10 bg-black p-10 w-full rounded-xl shadow-2xl">
+                      <h2 className="text-white text-xl font-semibold mb-4">
+                        Monthly Data List
+                      </h2>
+                      <ul className="list-disc pl-8">
+                        {monthlyData.map((dataItem, index) => (
+                          <li key={index} className="text-white">
+                            <strong>{dataItem.month}:</strong> Contributions:{" "}
+                            {dataItem.contributions}, Consumptions:{" "}
+                            {dataItem.consumptions}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 )}
               </div>
