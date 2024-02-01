@@ -139,7 +139,7 @@ const RegisterPage = () => {
               {/* IMAGE */}
               <div className="form-control">
                 <label htmlFor="image" className="label">
-                  <span className="label-text">Image URL</span>
+                  <span className="label-text">Image File</span>
                 </label>
                 <input
                   required
@@ -147,9 +147,9 @@ const RegisterPage = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, image: e.target.value })
                   }
-                  type="text"
+                  type="file"
                   id="image"
-                  placeholder="paste any image from https://www.pexels.com"
+                  placeholder="Insert an Image"
                   className="input input-bordered"
                 />
               </div>

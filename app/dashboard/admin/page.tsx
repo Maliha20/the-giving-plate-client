@@ -248,7 +248,7 @@ const AdminDashboard = () => {
                 {monthlyData?.length > 0 && (
                   <div>
                     <div className="mt-10 h-[50rem] bg-black p-10 w-full rounded-xl shadow-2xl">
-                      <ResponsiveContainer width="100%" height="100%">
+                      <ResponsiveContainer width="100%" height="50%">
                         <LineChart
                           width={500}
                           height={150}
