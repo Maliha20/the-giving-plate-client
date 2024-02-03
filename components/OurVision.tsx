@@ -39,7 +39,7 @@ const OurVision = () => {
                 whileInView={{ y: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.4 }}
               >
-                Within its welcoming gates, furry friends of all shapes and sizes find solace, healing, and a renewed sense of joy. The air is filled with the symphony of contented purrs, playful barks, and the occasional chirp of a curious bird. Each step within the sanctuary resonates with a profound love for all creatures, big and small.
+                Within its welcoming gates, people of all backgrounds and walks of life find solace, healing, and a renewed sense of joy. The air is filled with the symphony of laughter, friendly conversations, and the occasional hum of a community coming together. Each step within the sanctuary resonates with a profound love for all individuals, embracing the diversity of human experiences.
               </motion.p>
             </div>
             <div className="overflow-hidden">
@@ -48,7 +48,7 @@ const OurVision = () => {
                 whileInView={{ y: 0 }}
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.6 }}
               >
-              Dedicated volunteers with hearts as warm as the summer sun ensure that the needs of every resident are met. They tirelessly provide nourishment, shelter, and medical care, all with unwavering compassion. The dogs wag their tails in gratitude, while the cats purr their appreciation, knowing they are safe and loved.
+         Dedicated volunteers with hearts as warm as the summer sun ensure that the needs of every individual are met. They tirelessly provide support, a welcoming environment, and assistance, all with unwavering compassion. The community members express their gratitude through smiles and heartfelt interactions, knowing they are in a place where they are valued and cared for.
               </motion.p>
             </div>
           </div>
@@ -60,8 +60,8 @@ const OurVision = () => {
               className="w-full h-full"
             >
               <Image
-                src="https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="Black and White Bicolor Cat"
+                src="https://images.pexels.com/photos/13995877/pexels-photo-13995877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Two women smiling at each other"
                 width={1280}
                 height={720}
                 priority
