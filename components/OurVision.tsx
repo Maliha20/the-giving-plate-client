@@ -30,7 +30,7 @@ const OurVision = () => {
                 transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
                 className="text-3xl md:text-5xl font-semibold uppercase"
               >
-                Paws in Harmony
+               Harmony in Unity
               </motion.h3>
             </div>
             <div className="overflow-hidden">

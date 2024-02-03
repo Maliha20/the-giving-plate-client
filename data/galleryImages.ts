@@ -31,33 +31,33 @@ export const data = [
   },
   {
     id: 7,
-    src: "https://images.pexels.com/photos/5519502/pexels-photo-5519502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Feeding stray cats",
+    src: "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Working volunteers",
   },
   {
     id: 8,
-    src: "https://images.pexels.com/photos/2619707/pexels-photo-2619707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Feeding an animal",
+    src: "https://images.unsplash.com/photo-1608686207856-001b95cf60ca?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Food , ready to be given away",
   },
   {
     id: 9,
-    src: "https://images.pexels.com/photos/17040555/pexels-photo-17040555/free-photo-of-photo-of-a-man-feeding-a-sheep-surrounded-by-a-group-of-children.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Man feeding a sheep surrounded by children",
+    src: "https://images.unsplash.com/photo-1599059813005-11265ba4b4ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Food is being prepared for packing",
   },
   {
     id: 10,
-    src: "https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Bottle feeding a kitten",
+    src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Bunch of happy kids",
   },
 
   {
     id: 11,
-    src: "https://images.pexels.com/photos/11571052/pexels-photo-11571052.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "A man feeding two hungry monkeys",
+    src: "https://images.pexels.com/photos/6647121/pexels-photo-6647121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "A Volunteer holding food supply",
   },
   {
     id: 12,
-    src: "https://images.pexels.com/photos/7882789/pexels-photo-7882789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Man in brown hat and black and green vest giving food to a kangaroo",
+    src: "https://images.pexels.com/photos/6995247/pexels-photo-6995247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "Volunteers packing food for donation",
   },
 ];
