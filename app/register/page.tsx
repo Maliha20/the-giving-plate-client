@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState, useEffect, useRef } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { axiosPost } from "@/lib/axiosPost";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
@@ -167,7 +167,7 @@ const RegisterPage = () => {
                 </label>
 
                 <input
-                  required
+                 
                   onChange={(handleImageChange) => setFormData({ ...formData })}
                   type="file"
                   id="image"
