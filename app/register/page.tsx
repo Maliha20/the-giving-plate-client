@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState, useEffect,useRef } from "react";
+import { useCallback, useState, useEffect, useRef } from "react";
 import { axiosPost } from "@/lib/axiosPost";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,15 +11,28 @@ import SectionTitle from "@/components/SectionTitle";
 import { RootState } from "@/store/store";
 
 const RegisterPage = () => {
+ 
+  const [file, setFile] = useState<File | undefined>();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phoneNumber: "",
     password: "",
-    image: "",
+    image: null,
     address: "",
     occupation: "",
   });
+
+  const handleImageChange = (e:React.FormEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement & {
+      files: FileList
+    }
+
+   
+    const selectedFile = target.files?.[0];
+    setFile(selectedFile);
+ 
+};
 
   const dispatch = useDispatch();
   const router = useRouter();
@@ -35,6 +48,21 @@ const RegisterPage = () => {
   const handleRegister = useCallback(
     async (e: React.SyntheticEvent) => {
       e.preventDefault();
+// Create a FormData object
+const formDataToSend = new FormData();
+
+// Append other form data
+formDataToSend.append("name", formData.name);
+formDataToSend.append("email", formData.email);
+formDataToSend.append("phoneNumber", formData.phoneNumber);
+formDataToSend.append("password", formData.password);
+formDataToSend.append("address", formData.address);
+formDataToSend.append("occupation", formData.occupation);
+
+// Append the file
+if (file) {
+  formDataToSend.append("image", file);
+}
 
       const data = await axiosPost("/api/users/register", { ...formData });
 
@@ -48,13 +76,14 @@ const RegisterPage = () => {
           email: "",
           phoneNumber: "",
           password: "",
-          image: "",
+          image: null,
           address: "",
           occupation: "",
         });
+        setFile(undefined)
       }
     },
-    [formData, router, dispatch]
+    [formData,file, router, dispatch]
   );
 
   return (
@@ -76,9 +105,7 @@ const RegisterPage = () => {
                 <input
                   required
                   value={formData.name}
-                  onChange={(e) =>
-                    setFormData({ ...formData, name: e.target.value })
-                  }
+                  onChange={handleImageChange}
                   type="text"
                   id="name"
                   placeholder="Sarah"
@@ -141,16 +168,19 @@ const RegisterPage = () => {
                 <label htmlFor="image" className="label">
                   <span className="label-text">Image File</span>
                 </label>
+                
                 <input
                   required
-                  value={formData.image}
-                  onChange={(e) =>
-                    setFormData({ ...formData, image: e.target.value })
+                  onChange={(handleImageChange) =>
+                    setFormData({ ...formData })
                   }
                   type="file"
                   id="image"
-                  placeholder="Insert an Image"
+                  name="image"
+                  placeholder="Click here to insert an image"
                   className="input input-bordered"
+
+                  style={{ display: "none" }}
                 />
               </div>
               {/* ADDRESS */}
