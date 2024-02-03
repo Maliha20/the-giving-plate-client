@@ -11,7 +11,6 @@ import SectionTitle from "@/components/SectionTitle";
 import { RootState } from "@/store/store";
 
 const RegisterPage = () => {
- 
   const [file, setFile] = useState<File | undefined>();
   const [formData, setFormData] = useState({
     name: "",
@@ -23,16 +22,14 @@ const RegisterPage = () => {
     occupation: "",
   });
 
-  const handleImageChange = (e:React.FormEvent<HTMLInputElement>) => {
+  const handleImageChange = (e: React.FormEvent<HTMLInputElement>) => {
     const target = e.target as HTMLInputElement & {
-      files: FileList
-    }
+      files: FileList;
+    };
 
-   
     const selectedFile = target.files?.[0];
     setFile(selectedFile);
- 
-};
+  };
 
   const dispatch = useDispatch();
   const router = useRouter();
@@ -48,21 +45,19 @@ const RegisterPage = () => {
   const handleRegister = useCallback(
     async (e: React.SyntheticEvent) => {
       e.preventDefault();
-// Create a FormData object
-const formDataToSend = new FormData();
 
-// Append other form data
-formDataToSend.append("name", formData.name);
-formDataToSend.append("email", formData.email);
-formDataToSend.append("phoneNumber", formData.phoneNumber);
-formDataToSend.append("password", formData.password);
-formDataToSend.append("address", formData.address);
-formDataToSend.append("occupation", formData.occupation);
+      const formDataToSend = new FormData();
 
-// Append the file
-if (file) {
-  formDataToSend.append("image", file);
-}
+      formDataToSend.append("name", formData.name);
+      formDataToSend.append("email", formData.email);
+      formDataToSend.append("phoneNumber", formData.phoneNumber);
+      formDataToSend.append("password", formData.password);
+      formDataToSend.append("address", formData.address);
+      formDataToSend.append("occupation", formData.occupation);
+
+      if (file) {
+        formDataToSend.append("image", file);
+      }
 
       const data = await axiosPost("/api/users/register", { ...formData });
 
@@ -80,10 +75,10 @@ if (file) {
           address: "",
           occupation: "",
         });
-        setFile(undefined)
+        setFile(undefined);
       }
     },
-    [formData,file, router, dispatch]
+    [formData, file, router, dispatch]
   );
 
   return (
@@ -105,7 +100,9 @@ if (file) {
                 <input
                   required
                   value={formData.name}
-                  onChange={handleImageChange}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   type="text"
                   id="name"
                   placeholder="Sarah"
@@ -168,19 +165,16 @@ if (file) {
                 <label htmlFor="image" className="label">
                   <span className="label-text">Image File</span>
                 </label>
-                
+
                 <input
                   required
-                  onChange={(handleImageChange) =>
-                    setFormData({ ...formData })
-                  }
+                  onChange={(handleImageChange) => setFormData({ ...formData })}
                   type="file"
                   id="image"
                   name="image"
                   placeholder="Click here to insert an image"
                   className="input input-bordered"
-
-                  style={{ display: "none" }}
+                  
                 />
               </div>
               {/* ADDRESS */}
