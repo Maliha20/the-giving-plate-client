@@ -38,7 +38,7 @@ const RegisterPage = () => {
 
       const isValidPhotoUrl: boolean =
         formData.image.includes("images.pexels.com") ||
-        formData.image.includes("images.imgbb.com") ||
+        formData.image.includes("i.imgbb.com") ||
         formData.image.includes("images.unsplash.com");
 
       if (!isValidPhotoUrl) {
