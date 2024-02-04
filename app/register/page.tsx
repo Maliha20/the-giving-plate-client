@@ -158,7 +158,7 @@ const RegisterPage = () => {
                   }
                   type="text"
                   id="image"
-                  placeholder="paste any image link from pexels or unsplash"
+                  placeholder="Insert your image link from imgbb"
                   className="input input-bordered"
                 />
               </div>
