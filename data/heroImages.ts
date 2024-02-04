@@ -10,19 +10,19 @@ export const data = [
   },
   {
     id: 2,
+    src: "https://images.unsplash.com/photo-1502781252888-9143ba7f074e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Four kids playing",
+    heading: "Cherish the Joys of Childhood",
+    paragraph:"Empower orphaned children by contributing to our orphanage programs.  Your support ensures essential sustenance, nutrition, and a caring environment for children facing hunger. Join us in providing them with not only nourishment but also the hope of a brighter future and a place where they can find comfort and support.",
+    cta: "Learn More",
+  },
+  {
+    id: 3,
     src: "https://images.unsplash.com/photo-1516542241506-ef0f5246dc91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "A smiling man",
     heading: "Protect the smile",
     paragraph:
     "Let us unite to shield the smiles of the needy, for within each smile lies a world of hope and resilience. In the face of adversity, let our collective efforts be a fortress, ensuring that joy remains an unwavering companion for those in need. Together, we can protect the smiles that light up the darkest corners of life, fostering a community built on compassion and support.",
-    cta: "Learn More",
-  },
-  {
-    id: 3,
-    src: "https://images.unsplash.com/photo-1502781252888-9143ba7f074e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Four kids playing",
-    heading: "Cherish the Joys of Childhood",
-    paragraph:"Empower orphaned children by contributing to our orphanage programs.  Your support ensures essential sustenance, nutrition, and a caring environment for children facing hunger. Join us in providing them with not only nourishment but also the hope of a brighter future and a place where they can find comfort and support.",
     cta: "Learn More",
   },
   {
