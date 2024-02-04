@@ -1,35 +1,25 @@
 "use client";
 
-import { useCallback, useState, useEffect } from "react";
+import SectionTitle from "@/components/SectionTitle";
+import { login } from "@/features/auth/userSlice";
 import { axiosPost } from "@/lib/axiosPost";
+import { RootState } from "@/store/store";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useCallback, useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "@/features/auth/userSlice";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import SectionTitle from "@/components/SectionTitle";
-import { RootState } from "@/store/store";
 
 const RegisterPage = () => {
-  const [file, setFile] = useState<File | undefined>();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phoneNumber: "",
     password: "",
-    image: null,
+    image: "",
     address: "",
     occupation: "",
   });
-
-  const handleImageChange = (e: React.FormEvent<HTMLInputElement>) => {
-    const target = e.target as HTMLInputElement & {
-      files: FileList;
-    };
-
-    const selectedFile = target.files?.[0];
-    setFile(selectedFile);
-  };
 
   const dispatch = useDispatch();
   const router = useRouter();
@@ -46,17 +36,13 @@ const RegisterPage = () => {
     async (e: React.SyntheticEvent) => {
       e.preventDefault();
 
-      const formDataToSend = new FormData();
+      const isValidPhotoUrl: boolean =
+        formData.image.includes("images.pexels.com") ||
+        formData.image.includes("images.unsplash.com");
 
-      formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("phoneNumber", formData.phoneNumber);
-      formDataToSend.append("password", formData.password);
-      formDataToSend.append("address", formData.address);
-      formDataToSend.append("occupation", formData.occupation);
-
-      if (file) {
-        formDataToSend.append("image", file);
+      if (!isValidPhotoUrl) {
+        toast.error("Please enter a valid photo URL from Unsplash or Pexels.");
+        return;
       }
 
       const data = await axiosPost("/api/users/register", { ...formData });
@@ -71,14 +57,13 @@ const RegisterPage = () => {
           email: "",
           phoneNumber: "",
           password: "",
-          image: null,
+          image: "",
           address: "",
           occupation: "",
         });
-        setFile(undefined);
       }
     },
-    [formData, file, router, dispatch]
+    [formData, router, dispatch]
   );
 
   return (
@@ -163,18 +148,18 @@ const RegisterPage = () => {
               {/* IMAGE */}
               <div className="form-control">
                 <label htmlFor="image" className="label">
-                  <span className="label-text">Image File</span>
+                  <span className="label-text">Image URL</span>
                 </label>
-
                 <input
-                 
-                  onChange={(handleImageChange) => setFormData({ ...formData })}
-                  type="file"
+                  required
+                  value={formData.image}
+                  onChange={(e) =>
+                    setFormData({ ...formData, image: e.target.value })
+                  }
+                  type="text"
                   id="image"
-                  name="image"
-                  placeholder="Click here to insert an image"
+                  placeholder="paste any image link from pexels or unsplash"
                   className="input input-bordered"
-                  
                 />
               </div>
               {/* ADDRESS */}
