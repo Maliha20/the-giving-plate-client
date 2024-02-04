@@ -36,10 +36,14 @@ const RegisterPage = () => {
     async (e: React.SyntheticEvent) => {
       e.preventDefault();
 
-      const isValidPhotoUrl: boolean = true;
+      const isValidPhotoUrl: boolean =
+        formData.image.includes("images.pexels.com") ||
+        formData.image.includes("i.imgbb.com") ||
+        formData.image.includes("images.unsplash.com");
 
       if (!isValidPhotoUrl) {
-        toast.error("Please enter a valid photo URL.");
+        toast.error("Please enter a valid photo URL from Unsplash or Pexels.");
+        return;
       }
 
       const data = await axiosPost("/api/users/register", { ...formData });
