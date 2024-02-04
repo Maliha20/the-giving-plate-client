@@ -1,38 +1,37 @@
 export const data = [
   {
     id: 1,
-    src: "https://images.pexels.com/photos/57481/fox-red-fox-red-licking-57481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    src: "https://images.unsplash.com/photo-1523847027398-d3eb27914c67?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     alt: "A fox lying",
-    heading: "Support Animal Welfare",
+    heading: "Advocate for Human Well-being",
     paragraph:
-      "Make a difference in the lives of animals by supporting our animal welfare initiatives. Your donations help us provide food, shelter, medical care, and love to abandoned and neglected animals. Join us in creating a better world for our furry friends.",
+      "Make a Difference in Human Lives by Supporting Our Welfare Initiatives. Your donations help us provide food, shelter, medical care, and love to those in need. Join us in creating a better world for our fellow humans.",
     cta: "Learn More",
   },
   {
     id: 2,
-    src: "https://images.pexels.com/photos/441222/pexels-photo-441222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "A flamingo",
-    heading: "Protect the Environment",
+    src: "https://images.unsplash.com/photo-1516542241506-ef0f5246dc91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "A smiling man",
+    heading: "Protect the smile",
     paragraph:
-      "Empower orphaned children by contributing to our orphanage programs. Your donations provide essential resources, education, healthcare, and a loving environment for children in need. Join us in giving them a brighter future and a place to call home.",
+    "Let us unite to shield the smiles of the needy, for within each smile lies a world of hope and resilience. In the face of adversity, let our collective efforts be a fortress, ensuring that joy remains an unwavering companion for those in need. Together, we can protect the smiles that light up the darkest corners of life, fostering a community built on compassion and support.",
     cta: "Learn More",
   },
   {
     id: 3,
-    src: "https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "Two zebras",
-    heading: "Protect the Environment",
-    paragraph:
-      "Support our environmental conservation efforts to preserve and protect our planet. Your donations help us plant trees, clean up ecosystems, promote sustainable practices, and raise awareness about environmental issues. Join us in creating a greener and healthier world.",
+    src: "https://images.unsplash.com/photo-1502781252888-9143ba7f074e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Four kids playing",
+    heading: "Cherish the Joys of Childhood",
+    paragraph:"Empower orphaned children by contributing to our orphanage programs.  Your support ensures essential sustenance, nutrition, and a caring environment for children facing hunger. Join us in providing them with not only nourishment but also the hope of a brighter future and a place where they can find comfort and support.",
     cta: "Learn More",
   },
   {
     id: 4,
-    src: "https://images.pexels.com/photos/5403252/pexels-photo-5403252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    alt: "A black cat peeking",
-    heading: "Conserve Wildlife Habitats",
+    src: "https://images.pexels.com/photos/8078365/pexels-photo-8078365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    alt: "A hungry homeless man holding a sign",
+    heading: "Conserve The Happiness",
     paragraph:
-      "Make a positive impact on wildlife conservation by supporting our efforts to protect natural habitats. Your donations help us preserve ecosystems, conduct research, and promote sustainable coexistence with wildlife. Join us in safeguarding the diversity of our planet.",
+      "Make a positive impact on human well-being by supporting our efforts to nurture uplifting environments. Your contributions help us promote happiness, mental well-being, and sustainable communities. Join us in cultivating a harmonious and joyful world for all.",
     cta: "Learn More",
   },
   {
